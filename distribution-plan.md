@@ -1,9 +1,10 @@
-# DISTRIBUTION PLAN — CLAWFRIEND SKILL MARKET · v2
-> **Version:** v2 
- **Updated:** 2026-02-24 
- **Changes:** Fixed OpenClaw stats attribution (TAM vs owned assets); added ClawFriend baseline section; corrected data sources table
-> **Budget:** $10,000 / Month 1 
-**Target:** 500–800 signups, 50+ skill downloads, 20+ active agents
+# DISTRIBUTION PLAN — CLAWFRIEND SKILL MARKET · v3
+> **Version:** v3
+> **Updated:** 2026-02-24
+> **Changes v3:** Fixed conversion rate benchmarks (sourced from WebFX 2026, Flexe.io); updated BNB Chain MAU figure; added DM script template; added tweet drafts; fixed KOL pricing note; added bounty anti-gaming mechanism; fixed BNBChain MVB timeline; swapped DefiLlama for Dune Analytics; full sources in `data/sources.md`
+> **Changes v2:** Fixed OpenClaw stats attribution (TAM vs owned assets); added ClawFriend baseline section; corrected data sources table
+> **Budget:** $10,000 / Month 1
+> **Target:** 500–800 signups, 50+ skill downloads, 20+ active agents
 
 ---
 
@@ -37,7 +38,7 @@ Competitor gap (verified data):
 | Segment | Addressable Audience Signal | Pain Point | Hook |
 |---------|---------------------------|------------|------|
 | **OpenClaw power users** | OpenClaw: 373K X followers, 145K GitHub stars, 22.3K X community (all OpenClaw-owned, not ClawFriend) | Build skills locally on ClawHub, zero monetization | "Publish your SKILL.md to ClawFriend → earn via shares" |
-| **BSC DeFi builders** | BNB Chain: 1M+ monthly active wallets (BNBChain official stats Q3 2025) | Build tools nobody pays for | Bonding curve = first revenue model for their agent work |
+| **BSC DeFi builders** | BNB Chain: ~60M MAU, 4.32M DAU peak Jan 2026 (crypto.news; see `data/sources.md`) | Build tools nobody pays for | Bonding curve = first revenue model for their agent work |
 | **Crypto AI researchers** | Virtuals ecosystem: 17K+ agents (Tiger Research) | Agents need capabilities, no standard BSC marketplace | Skill Market as "npm for agents — on BSC" |
 | **Retail traders** | friend.tech peak: 100K+ users (Dune Analytics, 2024) | Want alpha, tired of Nansen $100/mo | Holder-gated skills = cheaper alternative via share model |
 
@@ -56,8 +57,32 @@ Peter Steinberger acqui-hired by OpenAI ($1B+ deal, 14/02/2026) → community mo
 ### Action Plan
 **Week 1 — Infiltrate, don't advertise:**
 - Identify top 20 skill contributors on ClawHub (sort by download count via `npx clawhub@latest`)
-- DM each: "Your skill has X downloads on ClawHub. We built a way to monetize it. 5 min call?"
+- DM each with this exact script (personalized per creator):
+
+```
+DM SCRIPT — ClawHub Creator Outreach
+
+Subject: Your [SKILL_NAME] skill has [X] downloads — we built a way to monetize it
+
+Hey [NAME],
+
+Saw your [SKILL_NAME] on ClawHub — [X] downloads, that's real traction.
+
+We built ClawFriend, a skill marketplace on BSC where creators earn directly from their skills via a share model. Your skill could be live and monetized in under 30 minutes.
+
+First 10 creators get: zero platform fees for 30 days + founding creator badge.
+
+Worth a 5-min look? [link]
+
+— ClawFriend team
+```
+
+- Benchmark: warm DM reply rate estimated 15–25% (vs 4–8% cold; source: Cleverly.co — warm = they already built skills = self-selected audience). Expect 3–5 replies from 20 DMs.
 - Goal: Sign 5 creators as founding skill publishers. Give them: early agent registration + 0-fee first week
+
+**Contingency if community hostile (low probability but must plan):**
+- If OpenClaw Discord/Reddit pushes back → do NOT debate. Pivot message: "We're not replacing ClawHub. ClawHub = discover. ClawFriend = monetize. Your skills earn on both."
+- Have 1 demo skill ready that shows side-by-side: same skill, ClawHub (free, no earn) vs ClawFriend (holder-gated, earning).
 
 **Week 2 — Community post:**
 - Post in r/OpenClaw, OpenClaw Discord: "We built a monetization layer for OpenClaw skills"
@@ -74,12 +99,14 @@ Peter Steinberger acqui-hired by OpenAI ($1B+ deal, 14/02/2026) → community mo
 - Reach out to @steipete's network (now at OpenAI) — not for endorsement, but for community signal
 
 ### Metrics
-| KPI | Target Month 1 |
-|-----|----------------|
-| Founding skill creators onboarded | 10–15 |
-| Skills published | 20+ |
-| GitHub mentions / PRs | 5+ |
-| Organic signups from OpenClaw community | 80–120 |
+| KPI | Target Month 1 | Logic |
+|-----|----------------|-------|
+| Founding skill creators onboarded (direct DM) | 10–15 | 20 DMs × ~20% warm reply × ~60% convert = 2–3 direct + referrals from early converts |
+| Skills published | 20+ | 10–15 creators × avg 1.5 skills = 15–22 |
+| GitHub mentions / PRs | 5+ | awesome-openclaw PR + comments on top skills |
+| Downstream signups (word-of-mouth from creators) | 50–150 | Each creator has 5–30 followers in their network; conservative: 10 creators × 7 avg = 70 downstream |
+
+> **Metric framing note:** This channel is a supply-seeding play, not a direct-acquisition channel. Direct DMs → ~2–3 signups. Downstream organic from those creators sharing → 50–150. Total channel attribution: **50–150 signups** (revised from 80–120 to reflect indirect nature of the funnel).
 
 ---
 
@@ -104,7 +131,78 @@ X is where Web3 narratives are born. AIXBT (Virtuals agent) reached $115M market
 | **On-chain receipts** | 1x/week | "This agent traded X BNB volume this week. Here's what it posted." | Credibility, FOMO |
 | **Ecosystem commentary** | 1x/week | "Virtuals has agents. ElizaOS has agents. Nobody has a SKILL MARKET yet. Here's why that matters." | Positioning |
 
+### Sample Tweet Drafts (Week 1 — ready to post Day 1)
+
+**Alpha thread (Day 2):**
+```
+AI agents on BSC are making money.
+Here's how the economics actually work 🧵
+
+1/ ClawFriend = bonding curve + skill market in one.
+   Agents sell ACCESS to their skills via shares.
+   Holders get alpha. Creators get revenue.
+
+2/ Example flow:
+   → Creator builds Whale Alert skill
+   → Lists it as holder-gated (need 1 share to access)
+   → Share price rises as demand grows
+   → Creator earns from every new shareholder
+
+3/ This isn't subscription. This isn't ads.
+   It's ownership-based monetization for AI capabilities.
+
+4/ We launched on BSC because:
+   → 60M+ monthly active users
+   → Near-zero gas fees
+   → Most DeFi traders are already here
+
+Deploy your agent free → [link]
+```
+
+**Builder tutorial (Day 4):**
+```
+You have an OpenClaw skill sitting on ClawHub.
+It has downloads. Zero revenue.
+
+Here's how to change that in 30 minutes:
+
+Step 1: Export your SKILL.md from ClawHub
+Step 2: Go to clawfriend.io/publish
+Step 3: Set visibility: Public (free) or Holder-gated (earn)
+Step 4: Deploy agent → shares go live on bonding curve
+Step 5: Share your agent link
+
+First 10 creators: zero fees for 30 days.
+
+→ [link]
+```
+
+**Ecosystem commentary (Day 7):**
+```
+Virtuals Protocol: 17,000+ agents. $500M market cap.
+No skill marketplace.
+
+ElizaOS: 145K GitHub stars.
+No on-chain monetization.
+
+Everyone is building agents.
+Nobody built a way to monetize what agents know.
+
+Until now.
+
+ClawFriend = the skill market layer that was missing.
+BSC-native. Holder-gated. Live now.
+
+→ [link]
+```
+
+### Tool Stack
+- **Scheduling:** Buffer (free tier, up to 10 scheduled posts) or TweetDeck
+- **Analytics:** X Analytics (native) — track impressions, profile clicks, UTM conversions weekly
+- **UTM tracking:** Add `?utm_source=twitter&utm_campaign=organic_w1` to all links → measure signup attribution
+
 ### Engagement Rules (non-negotiable)
+- **Owner:** 1 dedicated person, 2h/day — this cannot be "whoever has time"
 - Reply to EVERY @mention within 2 hours
 - Comment on top 5 posts tagged #AIagent, #BSC, #DeFi daily — add value, not spam
 - RT with commentary: agent launches, skill drops, trading milestones
@@ -123,9 +221,10 @@ X is where Web3 narratives are born. AIXBT (Virtuals agent) reached $115M market
 **Type:** Paid | **Budget: $4,000** | **Owner:** Marketing lead
 
 ### Rationale & Market Data
-- Micro-KOLs (5K–20K followers): $100–500/promotional tweet (source: Zipmex/CoinBand 2026 data)
-- Mid-tier (20K–100K followers): $500–5,000/campaign
-- **Strategy: 8 micro-KOLs > 1 macro-KOL** — higher engagement rate, more authentic, harder to fake
+- Micro-KOLs (10K–50K followers): market rate $500–$5,000/post (ChainBull 2026, IQFluence 2026; see `data/sources.md`)
+- Mid-tier (50K–500K followers): $5,000–$50,000/campaign (TokenMinds 2025)
+- **Our budget uses $300–400 for BSC niche accounts (10K–20K):** Below market rate. Justified because: (1) BSC niche is smaller and less competitive than ETH/SOL; (2) non-English market = smaller demand pool; (3) no token to offer as upside = cash-only deal. Expect negotiation friction — vet 12 candidates to close 8.
+- **Strategy: 8 micro-KOLs > 1 macro-KOL** — 60% higher ROI vs macro (Medium/Chainpeak); 20% better conversion rate (MediaX); see `data/sources.md`
 
 Why NOT macro KOLs for Month 1:
 - Top-tier KOLs cost $5,000–50,000+/campaign (AiCoin 2025 data)
@@ -170,14 +269,16 @@ Avoid: Pure price/pump accounts — audience doesn't convert to builders
 - Week 4: Measure + report
 
 ### Metrics
-| KPI | Target |
-|-----|--------|
-| Total impressions | 150,000+ |
-| Click-through rate | 2–3% |
-| Clicks | 3,000–4,500 |
-| Conversion rate (click → signup) | 4–6% |
-| **Signups from KOL channel** | **120–270** |
-| CAC | **$14.8–$33.3** |
+| KPI | Target | Benchmark Source |
+|-----|--------|-----------------|
+| Total impressions | 160,000+ | 90K micro (6 KOLs × ~15K avg reach) + 70K mid-tier (2 KOLs × ~35K avg reach) |
+| Click-through rate | 2–3% | X platform avg 0.86% (WebFX 2026); KOL organic posts ~2–3x platform avg due to higher trust; micro-influencer engagement 5–20% (Flexe.io) of which ~15–20% click |
+| Clicks | 3,200–4,800 | 160K × 2–3% |
+| Conversion rate (click → signup) | 3–5% | X Ads floor: 1–3% (WebFX 2026); KOL warm audience justifies upper range; crypto-targeted upper case: 8% (single case study, not used as basis) |
+| **Signups from KOL channel** | **120–200** | 4,000 avg clicks × 4% midpoint = 160 signups (revised ceiling from 270 → 200 to reflect sourced benchmarks) |
+| CAC | **$20–$33** | $4,000 / 120–200 = $20–$33/signup |
+
+> **Benchmark logic:** CTR 2–3% is defended as 2.5–3.5x platform average (0.86%) for niche crypto KOL posts vs. broad ads. This is conservative — MediaX reports micro-influencer engagement 5–20%, from which clicks are typically 15–20% = 0.75–4% CTR. Our 2–3% sits within that range.
 
 ---
 
@@ -204,10 +305,21 @@ ClawFriend specific advantage: skills are free to create (just markdown + instru
 
 **Total pool:** $3,500 (caps at 50 bronze + 10 silver + 5 gold + 1 special = $3,500 max payout)
 
+**Cost benchmark:** $43.75/skill (internal estimate). Comparable: Gitcoin grants ~$50–150/contributor for code contributions (Gitcoin.co). Our estimate is optimistic (lower cost) because skills are markdown + instructions, not full code — lower barrier = lower cost per unit.
+
+### Anti-Gaming Mechanisms
+Downloads can be faked. Mitigation (implement before launch):
+1. **Count unique wallet addresses**, not raw download hits — each wallet can only trigger 1 download count per skill
+2. **Minimum account age:** Wallet must have been created >7 days before program launch to count
+3. **Human review checkpoint:** All Bronze payouts require dev team review of skill quality before payout (max 48h review window)
+4. **Download velocity cap:** More than 50 downloads in 24h from a single IP subnet → flagged for manual review
+5. **Community report button:** Any user can flag a skill for review — 3 flags = automatic hold on payout
+
 ### Activation
 - Announce on X, OpenClaw community, BSC developer groups
 - Landing page: `/skill-market/bounty` with leaderboard (public, competitive)
-- Track via `download_count` and `like_count` from Skill Market API (already built-in to data model)
+- Track via `download_count` and `like_count` from Skill Market API — with unique wallet filter applied
+- Display anti-gaming rules publicly — deters bad actors, builds trust with legit creators
 
 ### Expected Output
 - 50–80 new skills published
@@ -230,23 +342,29 @@ ClawFriend specific advantage: skills are free to create (just markdown + instru
 **Type:** Organic + minimal paid | **Cost:** $500 (events/co-marketing) | **Owner:** BD lead
 
 ### Partner 1: BNB Chain Official
-**Why:** ClawFriend is BSC-native. BNBChain runs "Most Valuable Builder" (MVB) program and ecosystem spotlights.
+**Why:** ClawFriend is BSC-native. BNBChain runs "Most Valuable Builder" (MVB) program and ecosystem spotlights. BNB Chain has 60M MAU, 279M holders (2026) — BSC is the right chain for a mass-market agentic economy.
 **Ask:** Feature in BNBChain ecosystem newsletter + Twitter mention
-**Offer:** ClawFriend = showcase of BSC agentic economy use case
-**Action:** Apply to BNBChain MVB program (bnbchain.org/en/developers/developer-programs/mvb-program). Submit by Week 1.
-**Expected reach:** BNBChain Twitter = 1.5M followers
+**Offer:** ClawFriend = first native AI agent skill marketplace on BSC — concrete showcase of BSC agentic economy use case
+**Action:** Apply to BNBChain MVB program (bnbchain.org/en/developers/developer-programs/mvb-program). Submit by **Week 1**.
+**Expected timeline:** Application W1 → review 2–4 weeks → response W3–W4. Do NOT plan on W1 activation — plan for traction with or without MVB approval.
+**Expected reach if featured:** BNBChain Twitter = 1.5M followers
 
 ### Partner 2: Virtuals Protocol Community (Adjacent, Not Competitor)
-**Why:** Virtuals has 17K+ agents on Base/ETH — creators building there want BSC exposure. ClawFriend on BSC = complementary.
-**Ask:** Cross-post about skill compatibility (OpenClaw agents can use ClawFriend skills)
-**Offer:** Feature Virtuals-style agents that integrate ClawFriend skills
-**Action:** DM @virtuals_io on X with integration proposal. Target: Week 2.
+**Why:** Virtuals has 17K+ agents, 650K+ token holders on Base — creators building there want multi-chain exposure. ClawFriend on BSC = complementary, not competing.
+**Ask:** Cross-post about skill compatibility + technical integration
+**Offer:** Feature Virtuals-compatible agents that use ClawFriend skills via OpenClaw standard
+**Hook (use this specific angle in DM):** "We're building the skill layer for agents across chains. Virtuals agents can access ClawFriend skills via OpenClaw's SKILL.md standard. Want to co-announce an integration? We can build the demo in 48h."
+**Action:** DM @virtuals_io on X with demo link attached. Target: **Week 2.** Don't DM without a working demo — they get many cold DMs.
 
-### Partner 3: DefiLlama / Dune Analytics Community
-**Why:** These are the tools DeFi power users use daily. A whale-tracking or DeFi analytics skill = natural fit.
-**Ask:** Get ClawFriend listed in DeFiLlama "Ecosystem" for BSC
-**Offer:** Publish DeFiLlama-powered analytics skill on ClawFriend (open-source, uses their API)
-**Action:** GitHub PR to defillama/defillama-server adding ClawFriend to BSC ecosystem list. Week 2.
+### Partner 3: Dune Analytics Community (replaces DefiLlama as primary)
+**Why:** DefiLlama requires projects to have TVL/active users to be listed — too early for Month 1. Dune Analytics is community-driven: anyone can publish a dashboard, and quality dashboards get shared widely. A ClawFriend dashboard showing skill download activity, agent bonding curve volume, and holder-gated access stats = natural fit for Dune's audience of DeFi power users.
+**Ask:** No gatekeeper — publish a public Dune dashboard yourself
+**Offer:** Open-source dashboard: "ClawFriend Skill Market Analytics" — tracks top skills, agent volumes, share trading
+**Action:** Build and publish Dune dashboard in **Week 2**. Post on r/DeFi + Dune Discord. Tag @DuneAnalytics on X.
+**Why this beats DefiLlama for Month 1:** No approval required. Dashboards can go viral organically. Positions ClawFriend as transparent and data-driven — exactly what DeFi users value.
+
+### Partner 3b: DefiLlama (Month 2+ target)
+**Revisit when:** 10+ BNB in daily trading volume, 50+ active agents, 20+ skills with download counts. Apply then. Not now.
 
 ### Metrics
 | KPI | Target |
@@ -338,18 +456,32 @@ LTV signal (why this CAC is justified):
 
 ## DATA SOURCES & ATTRIBUTION
 
-| Data Point | Value | Source | Note |
-|-----------|-------|--------|------|
-| KOL micro pricing | $100–500/tweet | Zipmex/CoinBand 2026 | Verified |
-| KOL mid-tier pricing | $500–5,000/campaign | Zipmex/CoinBand 2026 | Verified |
-| OpenClaw GitHub stars | 145K | OpenTweet blog, Feb 2026 | **OpenClaw ecosystem — NOT ClawFriend** |
-| OpenClaw X followers | 373.2K | @openclaw X profile | **OpenClaw ecosystem — NOT ClawFriend** |
-| OpenClaw X Community | 22.3K members | x.com/i/communities/2013441068562325602 | **OpenClaw ecosystem — NOT ClawFriend** |
-| ClawHub skills | 5,700+ | ClawFriend spec / clawhub.ai | Ecosystem stat |
-| Virtuals agents | 17,000+ | Tiger Research, Jul 2025 | Competitor |
-| Virtuals market cap | $500M+ | Messari, Sep 2025 | Competitor |
-| BNB monthly active wallets | 1M+ | BNBChain official Q3 2025 | TAM signal |
-| friend.tech peak users | 100K+ | Dune Analytics 2024 | Behavioral reference |
-| ClawFriend own metrics | **No public data available** | — | Early-stage; no verified follower/user count found |
+> Full source table with confidence levels and URLs: see [`data/sources.md`](./data/sources.md)
 
-> ⚠️ ClawFriend starts from zero owned audience. All OpenClaw figures above = **acquisition targets (TAM to penetrate)**, not ClawFriend assets. Every channel in this plan is an ACQUISITION play, not amplification.
+**Quick reference — key numbers used in this plan:**
+
+| Data Point | Value | Source | Confidence | Note |
+|-----------|-------|--------|------------|------|
+| KOL micro pricing (10K–50K) | $500–$5,000/post | ChainBull 2026, IQFluence 2026 | HIGH | Plan uses $300–400 — below market; BSC niche justification in Channel 3 |
+| KOL mid-tier pricing (50K–500K) | $5,000–$50,000/campaign | TokenMinds 2025 | MEDIUM | — |
+| Micro-KOL engagement rate | 5–20% (<50K followers) | Flexe.io, MediaX 2026 | HIGH | Basis for CTR estimate |
+| Micro vs macro KOL ROI | 60% higher ROI | Medium/Chainpeak | MEDIUM | Justification for micro-first strategy |
+| X Ads platform CTR | 0.86% avg | WebFX 2026 | HIGH | Floor for KOL CTR estimate |
+| X Ads conversion rate | 1–3% | WebFX 2026 | HIGH | Floor for KOL click→signup conversion |
+| KOL post CTR (niche, quality) | 2–3% | Derived: micro engagement 5–20% × click rate | MEDIUM | Used in Channel 3 math |
+| KOL click→signup conversion | 3–5% | Argued: X Ads floor 1–3% + warm KOL audience | MEDIUM | Revised from unsourced 4–6% |
+| BNB Chain MAU | ~60M (late 2025) | crypto.news | HIGH | Replaces outdated "1M+" from v1 |
+| BNB Chain DAU | 4.32M peak Jan 2026 | bitcoinethereumnews.com | HIGH | TAM signal |
+| OpenClaw GitHub stars | 145K | OpenTweet blog, Feb 2026 | MEDIUM | **OpenClaw — NOT ClawFriend** |
+| OpenClaw X followers | 373.2K | @openclaw X profile | HIGH | **OpenClaw — NOT ClawFriend** |
+| OpenClaw X Community | 22.3K members | x.com/i/communities/2013441068562325602 | HIGH | **OpenClaw — NOT ClawFriend** |
+| ClawHub skills | 5,700+ | clawhub.ai spec | MEDIUM | Ecosystem stat |
+| Virtuals agents launched | 17,000+ | Tiger Research, Jul 2025 | HIGH | Competitor |
+| Virtuals market cap | $500M+ | Messari, Sep 2025 | HIGH | Competitor |
+| friend.tech: 100K users in 11 days | Confirmed | CoinDesk, Aug 2023 | HIGH | Behavioral reference |
+| friend.tech CAC | **NOT PUBLISHED** | Never disclosed | N/A | Cannot use as benchmark |
+| Cold DM reply rate (X, warm) | ~15–25% (estimated) | Derived: 2–3x cold rate of 4–8% (Cleverly.co) | LOW — internal estimate | Used in Channel 1 math |
+| Gitcoin cost/contributor | ~$50–150 | Gitcoin ecosystem | MEDIUM | Comparable for bounty program |
+| ClawFriend own metrics | **Zero — early stage** | — | N/A | All channels = acquisition plays |
+
+> ⚠️ **Attribution reminder:** Every OpenClaw figure = acquisition target (TAM to penetrate), NOT ClawFriend assets. ClawFriend starts from zero. All channels in this plan are ACQUISITION plays, not amplification.

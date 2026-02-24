@@ -17,7 +17,7 @@ This repo answers 3 questions: **Who are the competitors? What skills should exi
 ├── README.md                   ← you are here
 ├── competitive-landscape.md    ← Deliverable 1 (25%) · v1
 ├── skill-research.md           ← Deliverable 2 (25%) · v1
-├── distribution-plan.md        ← Deliverable 3 (40%) · v2
+├── distribution-plan.md        ← Deliverable 3 (40%) · v3
 ├── ai-showcase/
 │   └── prompts.md              ← AI prompts used during research
 └── data/
@@ -49,15 +49,15 @@ $10,000 / Month 1. 5 channels. Unit economics specific enough for an intern to e
 
 | Channel | Budget | Expected Signups |
 |---------|--------|-----------------|
-| OpenClaw Community Seeding | $0 | 80–120 |
+| OpenClaw Community Seeding | $0 | 50–150 |
 | Crypto Twitter / X Organic | $0 | 60–100 |
-| Micro-KOL Campaign (8 KOLs) | $4,000 | 120–270 |
+| Micro-KOL Campaign (8 KOLs) | $4,000 | 120–200 |
 | Developer Bounty Program | $3,500 | 80–120 |
 | BSC Ecosystem Partnerships | $500 | 40–80 |
 | Reserve (reallocate Week 3–4) | $2,000 | — |
-| **Total** | **$10,000** | **380–690** |
+| **Total** | **$10,000** | **350–650** |
 
-**Blended CAC:** ~$16.7 | **Payback period:** <2 days if creator runs 10 BNB/day volume
+**Blended CAC:** ~$16.7–$28.6 | **Payback period:** <2 days if creator runs 10 BNB/day volume
 
 → [distribution-plan.md](./distribution-plan.md)
 
@@ -82,7 +82,9 @@ See: [`data/sources.md`](./data/sources.md)
 
 | File | Version | Changes |
 |------|---------|---------|
+| distribution-plan.md | v3 | Fixed conversion rate benchmarks (sourced WebFX 2026, Flexe.io); updated BNB Chain MAU 1M→60M; added DM script + tweet drafts; fixed KOL pricing note; added bounty anti-gaming; fixed BNBChain MVB timeline; swapped DefiLlama→Dune Analytics; full sources in data/sources.md |
 | distribution-plan.md | v2 | Fixed OpenClaw stats attribution (TAM vs owned assets); added ClawFriend zero-baseline section; corrected data sources table |
-| competitive-landscape.md | v1 | Initial |
-| skill-research.md | v1 | Initial |
+| data/sources.md | v1 | Written from scratch — 15+ verified data points, confidence levels, flagged unverified claims |
+| competitive-landscape.md | v1 | Initial (placeholder) |
+| skill-research.md | v1 | Initial (placeholder) |
 | README.md | v1 | Initial |
