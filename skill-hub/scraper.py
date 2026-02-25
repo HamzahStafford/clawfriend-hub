@@ -236,7 +236,7 @@ def scrape_repo(owner: str, repo: str, token: str | None,
         # Publish or dry-run
         if dry_run:
             print(f"  [DRY-RUN] Would publish: {name} ({skill_type})")
-            record.update({"status": "dry_run", "content_preview": content[:120] + "..."})
+            record.update({"status": "dry_run", "content": content})
         else:
             try:
                 resp = publish_skill(name, content, skill_type, tags, visibility, api_key)
@@ -263,6 +263,8 @@ def main():
     parser.add_argument("--visibility", choices=["public", "private"], default="public")
     parser.add_argument("--dry-run", action="store_true",
                         help="Scan and report without publishing")
+    parser.add_argument("--save-skills", metavar="DIR",
+                        help="Save each scraped skill file into DIR/repo_name/path.md")
     parser.add_argument("--out", help="Save JSON results to this file")
     args = parser.parse_args()
 
@@ -320,9 +322,28 @@ def main():
     print(f"Errors:           {errors}")
     print("─" * 50)
 
+    if args.save_skills:
+        saved = 0
+        base_dir = args.save_skills
+        for r in all_results:
+            content = r.get("content")
+            if not content:
+                continue
+            # Build output path: base_dir/repo/original_file_path
+            repo_slug = r["repo"].replace("/", "__")
+            file_path = r["file"]
+            out_path = os.path.join(base_dir, repo_slug, file_path)
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+            with open(out_path, "w") as f:
+                f.write(content)
+            saved += 1
+        print(f"Skills saved to: {base_dir}/ ({saved} files)")
+
     if args.out:
+        # Strip full content from JSON output to keep it readable
+        out_data = [{k: v for k, v in r.items() if k != "content"} for r in all_results]
         with open(args.out, "w") as f:
-            json.dump(all_results, f, indent=2)
+            json.dump(out_data, f, indent=2)
         print(f"Results saved to: {args.out}")
 
     return 0 if errors == 0 else 1
