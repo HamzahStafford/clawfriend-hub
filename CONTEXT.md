@@ -1,8 +1,8 @@
 # CONTEXT — AI Handoff Document
 > **For:** AI intern picking up this project in a new session
 > **Last updated:** 2026-02-25
-> **Repo:** `/Users/lab3/Desktop/norway/lab3/clawfriend-hub` (main branch)
-> **Worktree:** `/Users/lab3/.claude-worktrees/clawfriend-hub/adoring-poincare` (branch: adoring-poincare)
+> **Repo:** `` (main branch)
+> **Worktree:** `` (branch: adoring-poincare)
 
 ---
 
