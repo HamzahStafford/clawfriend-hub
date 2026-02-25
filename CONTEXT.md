@@ -26,7 +26,7 @@ The repo is **one contestant's submission**. The contestant built everything in 
 /
 ├── README.md                        ← project overview · v2
 ├── competitive-landscape.md         ← Deliverable 1 (25%) · v3
-├── skill-research.md                ← Deliverable 2 (25%) · v1
+├── skill-research.md                ← Deliverable 2 (25%) · v1 (8 skills)
 ├── distribution-plan.md             ← Deliverable 3 (40%) · v3
 ├── ai-showcase/
 │   ├── claude/persona.md            ← Claude role: Strategic Analyst
@@ -34,8 +34,18 @@ The repo is **one contestant's submission**. The contestant built everything in 
 │   └── grok/persona.md              ← Grok role: Social & Trend Scout
 ├── data/
 │   └── sources.md                   ← verified data registry · v2
+├── skill-hub/
+│   ├── skill.md                     ← SKILL.md spec for GitHub Skill Scraper
+│   ├── scraper.py                   ← working Python scraper script
+│   ├── dry-run-results.json         ← metadata from last dry-run
+│   └── output/                      ← real scraped SKILL.md files
+│       └── anthropics__anthropic-cookbook/
+│           ├── .claude/skills/cookbook-audit/SKILL.md
+│           └── skills/custom_skills/
+│               ├── analyzing-financial-statements/SKILL.md
+│               ├── applying-brand-guidelines/SKILL.md
+│               └── creating-financial-models/SKILL.md
 ├── CONTEXT.md                       ← this file
-├── skill-hub/skill.md               ← placeholder (empty)
 └── ClawFriend.ai Go-To-Market Masterclass - V1 - test.pdf  ← Gemini Canvas draft
 ```
 
@@ -64,8 +74,8 @@ The repo is **one contestant's submission**. The contestant built everything in 
 - Moltbook "88→1.2M agents in 3 days" claim — sources.md flags "no primary URL", still in competitive table
 - Build4 metrics (184K tx/day) — LOW confidence, homepage counter only, not cross-checked
 
-### skill-research.md · v1
-7 skills for the Skill Marketplace. Each has: target user, problem, current alternatives, how ClawFriend skill solves it, public/private visibility logic, demand evidence.
+### skill-research.md · v1 (8 skills)
+8 skills for the Skill Marketplace. Each has: target user, problem, current alternatives, how ClawFriend skill solves it, public/private visibility logic, demand evidence.
 
 | # | Skill | Key demand signal |
 |---|-------|------------------|
@@ -76,9 +86,12 @@ The repo is **one contestant's submission**. The contestant built everything in 
 | 5 | Automated LP & IL Hedger | Arrakis/Gamma exist with fees = proven demand |
 | 6 | Cross-Chain Arb Scout | Stargate/Synapse = existing paid user base |
 | 7 | Agent-to-Agent Orchestrator | Unique; early experiments in Virtuals/NEAR, no mature solution |
+| 8 | **GitHub Skill Scraper** | 5,700+ ClawHub skills + 145K GitHub stars = supply pool; OpenClaw acqui-hire = 30-60 day migration window |
+
+Skill 8 is the strategic differentiator — it's both a research entry *and* a live demo (`skill-hub/skill.md` + `skill-hub/scraper.py`).
 
 **What's still weak:**
-- No entries in `data/sources.md` for skill-research numbers (breaks BGK test protocol)
+- No entries in `data/sources.md` for skill-research numbers 1–7 (breaks BGK test protocol)
 - "~12K monthly searches" for whale alert — no search query URL or screenshot
 - No revenue estimate per skill (e.g., "if 5 shareholders → creator earns X")
 
@@ -117,12 +130,33 @@ The data integrity backbone. Every number in every deliverable should map here.
 5. TAM & Market Size (MarketsandMarkets, CoinMarketCap, PANewsLab)
 6. Flagged / Needs Update (resolved conflicts table)
 
+**Note:** sources.md has a duplicate section header (`### friend.tech (bonding curve benchmark)` followed by `### friend.tech`) — cosmetic issue, data is correct. Fix if presenting.
+
 **Critical conflicts already resolved:**
 | Old | Fixed to | Reason |
 |-----|----------|--------|
 | BNB DAU "5M [artemis.xyz]" | 4.32M [bitcoinethereumnews] | artemis.xyz not in sources.md |
 | OpenClaw GitHub "135K" | 145K | sources.md had 145K |
 | SingularityNET TVL "$50M+" | REMOVED | No verifiable source |
+
+### skill-hub/ — Live Demo Assets
+New folder added this session. Contains a working GitHub scraper demo:
+
+- **`skill-hub/skill.md`** — Full SKILL.md spec for the "GitHub Skill Scraper" skill (publishable to ClawFriend Skill Market as-is). Input schema, 8-step pipeline, rate limiting, error handling.
+- **`skill-hub/scraper.py`** — Working Python 3.13 script. Tested against real repos. Usage:
+  ```bash
+  # Dry-run (no API key needed):
+  python3 skill-hub/scraper.py \
+    --repos "https://github.com/owner/repo1" "https://github.com/owner/repo2" \
+    --dry-run --save-skills skill-hub/output
+
+  # Live publish:
+  export GITHUB_TOKEN=ghp_...           # optional, boosts to 5K req/hr
+  export CLAWFRIEND_API_KEY=sk_...      # required
+  python3 skill-hub/scraper.py --repos "..." --visibility public
+  ```
+- **`skill-hub/output/`** — 4 real SKILL.md files scraped from `anthropics/anthropic-cookbook`:
+  - cookbook-audit, analyzing-financial-statements, applying-brand-guidelines, creating-financial-models
 
 ---
 
@@ -132,7 +166,8 @@ The data integrity backbone. Every number in every deliverable should map here.
 main branch:           /Users/lab3/Desktop/norway/lab3/clawfriend-hub
 worktree branch:       /Users/lab3/.claude-worktrees/clawfriend-hub/adoring-poincare
 
-Latest commit on main: 8385018 (Merge adoring-poincare: README v2)
+Latest commit on main: 48e9240 (Merge adoring-poincare: scraper --save-skills + real output files)
+Latest commit on worktree: 8acaca5 (same content, already merged)
 ```
 
 **Workflow used:** All edits happen in worktree (`adoring-poincare` branch) → commit → merge into main via the main repo directory. Main branch is checked out at `/Users/lab3/Desktop/norway/lab3/clawfriend-hub` so you must `git merge` from there:
@@ -163,16 +198,19 @@ git merge adoring-poincare --no-ff -m "message"
 ### High priority (before presentation)
 1. **Distribution plan: KOL pricing disclaimer** — add 1 sentence to Channel 3: *"Rate negotiated below market ($500–$5K standard) via product-for-coverage barter — agent demo access + founding creator badge as non-cash value."*
 2. **Distribution plan: kill criteria for $2K reserve** — add decision threshold: *"If KOL CAC > $50 after W3 → move remaining KOL budget to bounty. If bounty <30 skills by W3 end → move to X Ads targeting OpenClaw followers."*
-3. **Skill research: 3 demand links in sources.md** — any 3 skills need 1 verifiable URL each (Reddit search, Google Trends, or paid tool pricing page as WTP proxy).
+3. **Skill research: 3 demand links in sources.md** — any 3 skills (from skills 1–7) need 1 verifiable URL each (Reddit search, Google Trends, or paid tool pricing page as WTP proxy).
 
 ### Medium priority
 4. **Skill research: revenue estimate per skill** — "if 5 shareholders hold and trade, creator earns X BNB/month from 5% fee" using bonding curve math from spec.
 5. **Moltbook primary source** — find a crypto press URL for "88→1.2M in 3 days" claim or remove it from competitive table.
 6. **Funnel extension in distribution plan** — model signup→active agent conversion rate (what % of signups actually buy first share?).
+7. **sources.md cosmetic fix** — duplicate `### friend.tech` section header (lines 87–89). Harmless but visible.
 
-### Low priority
-7. **README version log** — currently says `competitive-landscape.md v1 (Initial)` in the description under deliverable 1, but actually it's v3. Already fixed in version log table but description text not updated.
-8. **skill-hub/skill.md** — empty placeholder, no action needed unless contest requires a demo skill.
+### Done this session ✓
+- skill-hub/skill.md — full SKILL.md spec for GitHub Skill Scraper (Skill 8)
+- skill-hub/scraper.py — working scraper, tested against anthropics/anthropic-cookbook (4 real SKILL.md files)
+- skill-hub/output/ — 4 real scraped skill files as demo evidence
+- skill-research.md — updated to 8 skills, Skill 8 added with full demand evidence
 
 ---
 
@@ -213,7 +251,6 @@ This pipeline is how the research was actually done — not cosmetic. Judges wil
 
 - `ClawFriend.ai Go-To-Market Masterclass - V1 - test.pdf` — Gemini Canvas presentation draft, don't overwrite
 - `ai-showcase/*/persona.md` — persona definitions, don't modify unless updating pipeline
-- `skill-hub/skill.md` — empty placeholder, leave unless contest requires demo
 
 ---
 
