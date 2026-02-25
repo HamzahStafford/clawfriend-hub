@@ -10,8 +10,7 @@
       "skills",
       "cookbook_audit"
     ],
-    "status": "dry_run",
-    "content_preview": "---\nname: cookbook-audit\ndescription: Audit an Anthropic Cookbook notebook based on a rubric. Use whenever a notebook re..."
+    "status": "dry_run"
   },
   {
     "repo": "anthropics/anthropic-cookbook",
@@ -24,8 +23,7 @@
       "custom_skills",
       "analyzing_financial_statements"
     ],
-    "status": "dry_run",
-    "content_preview": "---\nname: analyzing-financial-statements\ndescription: This skill calculates key financial ratios and metrics from financ..."
+    "status": "dry_run"
   },
   {
     "repo": "anthropics/anthropic-cookbook",
@@ -38,8 +36,7 @@
       "custom_skills",
       "applying_brand_guidelines"
     ],
-    "status": "dry_run",
-    "content_preview": "---\nname: applying-brand-guidelines\ndescription: This skill applies consistent corporate branding and styling to all gen..."
+    "status": "dry_run"
   },
   {
     "repo": "anthropics/anthropic-cookbook",
@@ -52,7 +49,6 @@
       "custom_skills",
       "creating_financial_models"
     ],
-    "status": "dry_run",
-    "content_preview": "---\nname: creating-financial-models\ndescription: This skill provides an advanced financial modeling suite with DCF analy..."
+    "status": "dry_run"
   }
 ]
