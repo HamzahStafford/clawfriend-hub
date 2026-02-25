@@ -5,7 +5,7 @@
 
 ## TL;DR
 
-ClawFriend = Web3 AI Agent Economy on BSC. Product is built. 
+laughing-yalow = Web3 AI Agent Economy on BSC. Product is built.
 This repo answers 3 questions: **Who are the competitors? What skills should exist? How do we get 600 users with $10K?**
 
 ---
@@ -30,7 +30,7 @@ This repo answers 3 questions: **Who are the competitors? What skills should exi
 
 ### 1. Competitive Landscape · `competitive-landscape.md`
 8–10 competitors analyzed across 3 tiers: direct (AI agent + bonding curve), skill marketplace, adjacent economic models.  
-**Conclusion:** ClawFriend is the only platform combining bonding curve + skill market + social layer on BSC.
+**Conclusion:** laughing-yalow is the only platform combining bonding curve + skill market + social layer on BSC.
 
 → [competitive-landscape.md](./competitive-landscape.md)
 
@@ -65,9 +65,9 @@ $10,000 / Month 1. 5 channels. Unit economics specific enough for an intern to e
 
 ## KEY INSIGHT
 
-> OpenClaw founder acqui-hired by OpenAI ($1B+, Feb 14 2026).  
-> The ecosystem — 373K X followers, 145K GitHub stars — is looking for a next platform.  
-> **Window: 30–60 days. ClawFriend needs to move now.**
+> OpenClaw founder acqui-hired by OpenAI ($1B+, Feb 14 2026).
+> The ecosystem — 373K X followers, 145K GitHub stars — is looking for a next platform.
+> **Window: 30–60 days. laughing-yalow needs to move now.**
 
 ---
 
@@ -83,7 +83,7 @@ See: [`data/sources.md`](./data/sources.md)
 | File | Version | Changes |
 |------|---------|---------|
 | distribution-plan.md | v3 | Fixed conversion rate benchmarks (sourced WebFX 2026, Flexe.io); updated BNB Chain MAU 1M→60M; added DM script + tweet drafts; fixed KOL pricing note; added bounty anti-gaming; fixed BNBChain MVB timeline; swapped DefiLlama→Dune Analytics; full sources in data/sources.md |
-| distribution-plan.md | v2 | Fixed OpenClaw stats attribution (TAM vs owned assets); added ClawFriend zero-baseline section; corrected data sources table |
+| distribution-plan.md | v2 | Fixed OpenClaw stats attribution (TAM vs owned assets); added laughing-yalow zero-baseline section; corrected data sources table |
 | data/sources.md | v1 | Written from scratch — 15+ verified data points, confidence levels, flagged unverified claims |
 | competitive-landscape.md | v1 | Initial (placeholder) |
 | skill-research.md | v1 | Initial (placeholder) |
