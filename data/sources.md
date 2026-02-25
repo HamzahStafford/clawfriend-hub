@@ -1,7 +1,8 @@
 # DATA SOURCES & VERIFIED RESEARCH
-> **Last updated:** 2026-02-24
+> **Last updated:** 2026-02-25
 > **Purpose:** Backup tất cả số liệu trong repo. BGK hỏi "số này lấy ở đâu?" — trỏ vào file này.
 > **Rule:** Mỗi số liệu phải có source URL. Nếu không verify được → label `[UNVERIFIED]` và ghi rõ lý do.
+> **v2 changes:** Added competitor data sections (Virtuals live counters, Moltbook, ClawHub, SingularityNET, Build4); added TAM row; fixed BNB DAU — removed artemis.xyz reference (unverified), canonical source is bitcoinethereumnews.com 4.32M peak Jan 2026; removed SingularityNET TVL $50M+ (no verifiable source found); flagged Build4 homepage metrics as unverified.
 
 ---
 
@@ -22,16 +23,69 @@
 ## 2. COMPETITOR DATA
 
 ### Virtuals Protocol
+> **Note on data:** Two sets of numbers exist. (A) Snapshot sources (Tiger Research Jul 2025, Messari Sep 2025) — verified by independent analysts. (B) Live counters from virtuals.io — higher numbers, read Feb 25 2026. Competitive landscape uses live (B) with explicit timestamp. Both sets kept here for traceability.
+
 | Data Point | Value | Source | URL | Confidence |
 |------------|-------|--------|-----|------------|
-| On-chain agents launched | 17,000+ | Tiger Research, Jul 2025 | https://reports.tiger-research.com/p/virtuals-protocol-acp-eng | HIGH |
-| Market cap (Sep 2025) | $500M+ | Messari, Sep 2025 | https://messari.io/report/understanding-virtuals-protocol-a-comprehensive-overview | HIGH |
+| On-chain agents launched (Jul 2025 snapshot) | 17,000+ | Tiger Research, Jul 2025 | https://reports.tiger-research.com/p/virtuals-protocol-acp-eng | HIGH |
+| On-chain agents (live counter, Feb 25 2026) | 17,897 | virtuals.io homepage | https://virtuals.io | MEDIUM — live counter, no independent cross-check |
+| TVL (live, Feb 25 2026) | $12.94M | virtuals.io | https://virtuals.io | MEDIUM — live counter |
+| 30D trading volume (live, Feb 25 2026) | $13.58B | virtuals.io | https://virtuals.io | MEDIUM — live counter |
+| aGDP (live, Feb 25 2026) | $479M | virtuals.io | https://virtuals.io | MEDIUM — live counter |
+| Protocol revenue (live, Feb 25 2026) | $2.61M | virtuals.io | https://virtuals.io | MEDIUM — live counter |
+| Unique wallets 30D (live, Feb 25 2026) | 21,788 | virtuals.io | https://virtuals.io | MEDIUM — live counter |
+| Market cap (live, Feb 25 2026) | $301.95M | virtuals.io | https://virtuals.io | MEDIUM — live counter |
+| Market cap (Sep 2025 snapshot) | $500M+ | Messari, Sep 2025 | https://messari.io/report/understanding-virtuals-protocol-a-comprehensive-overview | HIGH |
 | Market cap peak (Jan 2025) | $4.6B (456x growth from Oct 2024 launch) | 99Bitcoins | https://99bitcoins.com/cryptocurrency/virtuals-protocol/ | MEDIUM |
 | Token holders on Base | 650,000+ | Messari | https://messari.io/report/understanding-virtuals-protocol-a-comprehensive-overview | HIGH |
-| Total DEX volume | $8B+ (Sep 2025) | Messari | https://messari.io/report/understanding-virtuals-protocol-a-comprehensive-overview | HIGH |
+| Total DEX volume (Sep 2025) | $8B+ | Messari | https://messari.io/report/understanding-virtuals-protocol-a-comprehensive-overview | HIGH |
+| X followers | 284K | @virtuals_io X profile | https://x.com/virtuals_io | HIGH |
 | Discord members | 7,600+ | Tiger Research | https://reports.tiger-research.com/p/virtuals-protocol-acp-eng | MEDIUM |
 | Telegram members | 25,000+ | Tiger Research | https://reports.tiger-research.com/p/virtuals-protocol-acp-eng | MEDIUM |
 | Marketing spend | **[NOT PUBLISHED]** | No public disclosure | — | N/A |
+
+### Moltbook
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| Agents registered | 2,845,239 | moltbook.com homepage counter | https://moltbook.com | MEDIUM — live counter, read Feb 25 2026, not independently cross-checked |
+| Posts | 1,570,458 | moltbook.com homepage counter | https://moltbook.com | MEDIUM — live counter |
+| Comments | 12,369,033 | moltbook.com homepage counter | https://moltbook.com | MEDIUM — live counter |
+| Submolts | 18,375 | moltbook.com homepage counter | https://moltbook.com | MEDIUM — live counter |
+| Viral growth claim (88 → 1.2M agents in 3 days) | Reported | X posts / crypto press | — | MEDIUM — widely reported, no single primary source URL |
+| API keys leaked (Feb 2026) | 1.5M | Crypto security reports | — | MEDIUM — reported, source not pinned |
+
+### ClawHub / OpenClaw
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| OpenClaw GitHub stars | 145K | OpenTweet blog, Feb 2026 | (internal reference) | MEDIUM |
+| ClawHub skills available | 5,700+ | clawhub.ai | https://clawhub.ai | MEDIUM |
+| Top skill downloads (Gog) | 36.1K | clawhub.com skill page | https://clawhub.com | MEDIUM — read from page, Feb 25 2026 |
+| Top skill downloads (self-improving-agent) | 35.9K | clawhub.com skill page | https://clawhub.com | MEDIUM — read from page, Feb 25 2026 |
+
+> ⚠️ **CONFLICT RESOLVED:** competitive-landscape v1/v2 used "135K GitHub stars" — corrected to 145K per OpenTweet blog reference in sources.md. All files now use 145K.
+
+### SingularityNET
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| AGIX market cap (Feb 25 2026) | $349.75M | CoinMarketCap | https://coinmarketcap.com/currencies/singularitynet | HIGH |
+| AGIX 24h volume (Feb 25 2026) | $32.57M | CoinMarketCap | https://coinmarketcap.com/currencies/singularitynet | HIGH |
+| X followers | 150K+ | @singularitynet X profile | https://x.com/singularitynet | HIGH |
+| Services listed | 1K+ | singularitynet.io | https://singularitynet.io | MEDIUM |
+| TVL | **[REMOVED — no verifiable source found]** | Searched DeFiLlama, singularitynet.io — no TVL figure published | — | N/A |
+
+> ⚠️ **CONFLICT RESOLVED:** competitive-landscape v2 used "TVL: $50M+" with no source. This figure has been removed from competitive-landscape v3. Do not use without a verifiable URL.
+
+### Build4
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| Active agents | 2,847 | build4.io homepage counter | https://build4.io | LOW — live counter on low-visibility project (0–1 likes/post on X); not independently cross-checked |
+| Transactions/day | 184K | build4.io homepage counter | https://build4.io | LOW — inconsistent with X visibility; treat as indicative only |
+| Skills created | 12,391 | build4.io homepage counter | https://build4.io | LOW — same caveat |
+| Agent spawns | 6,204 | build4.io homepage counter | https://build4.io | LOW — same caveat |
+
+> ⚠️ **FLAG:** Build4 metrics are homepage counters on a project with near-zero social presence. Numbers are used in competitive landscape as indicative (labelled "not cross-referenced"). Do not cite as hard data in presentation.
+
+### friend.tech (bonding curve benchmark)
 
 ### friend.tech
 | Data Point | Value | Source | URL | Confidence |
@@ -119,17 +173,36 @@
 
 ---
 
-## 5. FLAGGED / NEEDS UPDATE
+## 5. TAM & MARKET SIZE
 
-Items from earlier versions of distribution plan that need correction:
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| AI agents market size (2025) | $7.84B | MarketsandMarkets | https://www.marketsandmarkets.com/Market-Reports/ai-agents-market-15761548.html | MEDIUM — paid report, not freely verifiable |
+| AI agents market size (2030 projected) | $52.62B | MarketsandMarkets | https://www.marketsandmarkets.com/Market-Reports/ai-agents-market-15761548.html | MEDIUM — paid report projection |
+| AI agents CAGR | 46.3% | MarketsandMarkets | https://www.marketsandmarkets.com/Market-Reports/ai-agents-market-15761548.html | MEDIUM — paid report |
+| AI crypto market cap (Feb 2026) | ~$20B | CoinMarketCap AI sector | https://coinmarketcap.com/view/artificial-intelligence/ | HIGH |
+| AI crypto market cap YoY growth | ~150% | CoinMarketCap | https://coinmarketcap.com/view/artificial-intelligence/ | MEDIUM — derived from CMC sector page |
+| Web3 AI agent TAM estimate | $90B–$170B | PANewsLab | https://www.panewslab.com/en/articles/tiz7un4u | LOW — single source, wide range, non-mainstream outlet |
 
-| Old Claim | Issue | Corrected Value | Source |
-|-----------|-------|-----------------|--------|
-| "BNB monthly active wallets: 1M+" | Outdated — actual is ~60x higher | ~60M MAU (late 2025) | crypto.news |
-| "KOL mid-tier pricing: $500–5,000 (Zipmex/CoinBand)" | Zipmex shut down 2023; CoinBand not verifiable | $5K–$50K mid-tier | ChainBull 2026, TokenMinds 2025 |
-| "4–6% conversion rate (click → signup)" — no source | Unsourced assumption | 3–5% (argue: X ads floor 1–3%, KOL warm audience = upper range) | WebFX 2026 |
-| "2–3% CTR for KOL posts" — no source | Unsourced | Keep range, add footnote: X avg 0.86%; KOL organic ~3x platform avg | WebFX + Flexe.io |
-| "80–120 signups from OpenClaw DM" | Overstated — DMs = 2 direct signups; rest is downstream word-of-mouth | Reframe: 10–15 creators onboarded → 5–10 downstream each = 50–150 | Argued model |
+> ⚠️ **MarketsandMarkets note:** This is a paid research report. URL will load a paywall. Used in competitive-landscape as supporting context only. If judges push on verification, note: "paid report, figures consistent with Virtuals Protocol's $4.6B peak market cap and $13.58B monthly volume as live validation of TAM scale."
+> ⚠️ **PANewsLab $90B–$170B:** Low confidence, range too wide to be actionable. Included for completeness. Do not lead with this number in presentation.
+
+---
+
+## 6. FLAGGED / NEEDS UPDATE
+
+Items from earlier versions that need correction:
+
+| Old Claim | File | Issue | Corrected Value | Source |
+|-----------|------|-------|-----------------|--------|
+| "BNB monthly active wallets: 1M+" | distribution-plan v1 | Outdated — actual is ~60x higher | ~60M MAU (late 2025) | crypto.news |
+| "KOL mid-tier pricing: $500–5,000 (Zipmex/CoinBand)" | distribution-plan v1 | Zipmex shut down 2023; CoinBand not verifiable | $5K–$50K mid-tier | ChainBull 2026, TokenMinds 2025 |
+| "4–6% conversion rate (click → signup)" | distribution-plan v1 | Unsourced assumption | 3–5% (argue: X ads floor 1–3%, KOL warm audience = upper range) | WebFX 2026 |
+| "2–3% CTR for KOL posts" | distribution-plan v1 | Unsourced | Keep range, add footnote: X avg 0.86%; KOL organic ~3x platform avg | WebFX + Flexe.io |
+| "80–120 signups from OpenClaw DM" | distribution-plan v1 | Overstated — DMs = direct creators; signups are downstream | 10–15 creators → 50–150 downstream | Argued model |
+| "BNB Chain 5M DAU [artemis.xyz]" | competitive-landscape v2 | artemis.xyz not in sources.md; conflicted with 4.32M figure | 4.32M DAU peak Jan 2026 | bitcoinethereumnews.com |
+| "OpenClaw GitHub stars: 135K" | competitive-landscape v1/v2 | Conflicted with sources.md (145K) | 145K | OpenTweet blog, Feb 2026 |
+| "SingularityNET TVL: $50M+" | competitive-landscape v2 | No verifiable source found on DeFiLlama or singularitynet.io | REMOVED | N/A |
 
 ---
 
