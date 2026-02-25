@@ -86,14 +86,31 @@ All data is verified from real sources (X posts, tool websites, search trends). 
 **Demand evidence**: "cross-chain arbitrage bot" mentions on X with good engagement.
 
 ### 7. Agent-to-Agent Collaboration & Task Delegation Orchestrator
-**Target user**: Agent builders and power users creating complex workflows.  
-**Problem**: Single agents limited; no easy way to delegate subtasks to other agents.  
-**Current alternatives**: Early experiments in Virtuals/NEAR, no mature marketplace.  
-**How the skill solves it**: Agent breaks tasks, hires other agents via marketplace (pay USDC), coordinates results.  
-**Visibility & Monetization**: Public simple delegation → Private advanced orchestration (hold shares).  
+**Target user**: Agent builders and power users creating complex workflows.
+**Problem**: Single agents limited; no easy way to delegate subtasks to other agents.
+**Current alternatives**: Early experiments in Virtuals/NEAR, no mature marketplace.
+**How the skill solves it**: Agent breaks tasks, hires other agents via marketplace (pay USDC), coordinates results.
+**Visibility & Monetization**: Public simple delegation → Private advanced orchestration (hold shares).
 **Demand evidence**: High buzz on X about agent orchestration/subagents (400–800 likes posts).
 
-## Conclusion
-These 7 skills target proven demand segments (DeFi traders, yield farmers, degen traders, agent builders). Holder-gated versions directly incentivize share purchases, aligning with ClawFriend's tokenized economy. Public versions attract initial users → convert to shareholders via premium access. All are technically feasible with BNB Chain infra + existing APIs.
+### 8. GitHub Skill Scraper — Supply-Side Bootstrap Tool
+**Target user**: Agent creators who want to seed the ClawFriend Skill Market quickly without manually copying files. Also: teams who maintain skills on GitHub and want them live on ClawFriend automatically.
+**Problem**: The OpenClaw/ClawHub ecosystem has 5,700+ published skills and 145K GitHub stars — the vast majority don't exist on ClawFriend Skill Market. Every skill not on ClawFriend is a missed fee opportunity for creators and a missed content signal for traders deciding whether to buy shares.
+**Current alternatives**: Manual copy-paste per file (no automation exists). No equivalent tool on Virtuals, NEAR, or SingularityNET — they don't have a skill file convention.
+**How the skill solves it**: Input = list of public GitHub repo URLs. The skill calls the GitHub Trees API (main branch only, `GET /repos/{owner}/{repo}/git/trees/main?recursive=1`), filters for `SKILL.md`, `WORKFLOW.md`, `prompt.txt`, fetches raw content, auto-detects ClawFriend type (`skill`/`workflow`/`prompt`), deduplicates by content hash, and publishes each file to `POST /v1/academy/skills`. One run on the top 10 OpenClaw community repos = potentially 100+ skills seeded under the caller's agent identity.
+**Visibility & Monetization**:
+- Public: Runs free, publishes as public skills (drives Skill Market volume + attracts users)
+- Private/holder-gated upgrade: Bulk import + auto-tagging + scheduled sync (cron) — requires holding ≥1 share. Recurring value: new files pushed to GitHub repos automatically appear in Skill Market.
+**Demand evidence**:
+- ClawHub has 5,700+ skills (clawhub.com) and 145K GitHub stars in the OpenClaw ecosystem — direct supply pool.
+- GitHub API: Free, public, no auth needed for public repos (60 req/hr unauthenticated; 5,000/hr with token). No barriers to build.
+- OpenClaw acqui-hire by OpenAI (Feb 14 2026): 373K X followers + 145K GitHub stars community is actively looking for a next platform. This skill directly converts their existing GitHub assets into ClawFriend Skill Market listings — lowest-friction migration path available.
+- Pattern validated: Gitcoin used similar "import from GitHub" mechanics to bootstrap early contributor supply in grant rounds. Supply-side seeding → demand follows.
+**Demo:** `skill-hub/skill.md` — full SKILL.md spec with input schema, step-by-step pipeline, error handling, and rate limiting strategy.
 
-Next steps: Prioritize top 3–4 for initial marketplace seeding + promotion in Distribution Plan.
+## Conclusion
+These 8 skills target proven demand segments (DeFi traders, yield farmers, degen traders, agent builders, and platform supply-siders). Holder-gated versions directly incentivize share purchases, aligning with ClawFriend's tokenized economy. Public versions attract initial users → convert to shareholders via premium access. All are technically feasible with BNB Chain infra + existing APIs.
+
+**Skill 8 (GitHub Skill Scraper) is the highest-leverage launch action**: it can seed 100+ skills into the market in a single run, immediately making ClawFriend's Skill Market non-empty at launch — which is the hardest cold-start problem for any marketplace.
+
+Next steps: Prioritize Skill 8 + top 2–3 DeFi skills for initial marketplace seeding + promotion in Distribution Plan.
