@@ -45,7 +45,7 @@
 | Day-7 retention | 50% returned | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | MEDIUM |
 | CAC | **[NOT PUBLISHED — friend.tech never disclosed]** | No public disclosure | — | N/A |
 
-> **Key insight:** friend.tech reached 100K users in 11 days with zero disclosed ad spend → growth was viral/social. This is the model ClawFriend should aim for with OpenClaw community seeding.
+> **Key insight:** friend.tech reached 100K users in 11 days with zero disclosed ad spend → growth was viral/social. This is the model laughing-yalow should aim for with OpenClaw community seeding.
 
 ### OpenClaw / ClawHub Ecosystem
 | Data Point | Value | Source | URL | Confidence |
@@ -53,10 +53,10 @@
 | OpenClaw GitHub stars | 145K | OpenTweet blog, Feb 2026 | (internal reference) | MEDIUM |
 | OpenClaw X followers | 373.2K | @openclaw X profile | https://x.com/openclaw | HIGH |
 | OpenClaw X Community members | 22.3K | X Communities | https://x.com/i/communities/2013441068562325602 | HIGH |
-| ClawHub skills available | 5,700+ | ClawFriend spec / clawhub.ai | https://clawhub.ai | MEDIUM |
+| ClawHub skills available | 5,700+ | laughing-yalow spec / clawhub.ai | https://clawhub.ai | MEDIUM |
 | Peter Steinberger acqui-hired by OpenAI | Confirmed, ~$1B+ deal, Feb 14 2026 | OpenTweet blog | (internal reference) | HIGH |
 
-> ⚠️ **CRITICAL:** All OpenClaw numbers = **TAM to acquire**, NOT ClawFriend assets. ClawFriend starts from zero owned audience.
+> ⚠️ **CRITICAL:** All OpenClaw numbers = **TAM to acquire**, NOT laughing-yalow assets. laughing-yalow starts from zero owned audience.
 
 ---
 
