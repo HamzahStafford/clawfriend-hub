@@ -1,0 +1,58 @@
+[
+  {
+    "repo": "anthropics/anthropic-cookbook",
+    "file": ".claude/skills/cookbook-audit/SKILL.md",
+    "skill_name": "anthropic-cookbook/.claude/skills/cookbook-audit",
+    "type": "skill",
+    "tags": [
+      "anthropic_cookbook",
+      ".claude",
+      "skills",
+      "cookbook_audit"
+    ],
+    "status": "dry_run",
+    "content_preview": "---\nname: cookbook-audit\ndescription: Audit an Anthropic Cookbook notebook based on a rubric. Use whenever a notebook re..."
+  },
+  {
+    "repo": "anthropics/anthropic-cookbook",
+    "file": "skills/custom_skills/analyzing-financial-statements/SKILL.md",
+    "skill_name": "anthropic-cookbook/skills/custom_skills/analyzing-financial-statements",
+    "type": "skill",
+    "tags": [
+      "anthropic_cookbook",
+      "skills",
+      "custom_skills",
+      "analyzing_financial_statements"
+    ],
+    "status": "dry_run",
+    "content_preview": "---\nname: analyzing-financial-statements\ndescription: This skill calculates key financial ratios and metrics from financ..."
+  },
+  {
+    "repo": "anthropics/anthropic-cookbook",
+    "file": "skills/custom_skills/applying-brand-guidelines/SKILL.md",
+    "skill_name": "anthropic-cookbook/skills/custom_skills/applying-brand-guidelines",
+    "type": "skill",
+    "tags": [
+      "anthropic_cookbook",
+      "skills",
+      "custom_skills",
+      "applying_brand_guidelines"
+    ],
+    "status": "dry_run",
+    "content_preview": "---\nname: applying-brand-guidelines\ndescription: This skill applies consistent corporate branding and styling to all gen..."
+  },
+  {
+    "repo": "anthropics/anthropic-cookbook",
+    "file": "skills/custom_skills/creating-financial-models/SKILL.md",
+    "skill_name": "anthropic-cookbook/skills/custom_skills/creating-financial-models",
+    "type": "skill",
+    "tags": [
+      "anthropic_cookbook",
+      "skills",
+      "custom_skills",
+      "creating_financial_models"
+    ],
+    "status": "dry_run",
+    "content_preview": "---\nname: creating-financial-models\ndescription: This skill provides an advanced financial modeling suite with DCF analy..."
+  }
+]
