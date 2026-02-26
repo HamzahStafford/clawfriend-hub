@@ -235,6 +235,8 @@ Nhiều skills hơn → Nhiều Agent Users hơn
 
 ## PHẦN III — CAMPAIGN EXECUTION
 
+> **Cấu trúc tài liệu:** Phần III trình bày 5 campaigns theo framework chiến lược mới (3-tầng, v4). Phần IV (sau) là channel detail execution kế thừa từ v3 với action plan sẵn sàng cho intern — bao gồm DM scripts, tweet drafts, KOL vetting checklist, timeline chi tiết. Hai phần bổ sung cho nhau: **Phần III = "tại sao và cơ chế"**; **Phần IV = "làm gì cụ thể, từng bước."**
+
 > **Hard pre-condition:** Phải có tối thiểu **10 skills live + 5 active agents** TRƯỚC khi chạy bất kỳ paid campaign nào. Empty marketplace = flywheel không khởi động = đốt tiền vô ích.
 
 ---
@@ -243,30 +245,28 @@ Nhiều skills hơn → Nhiều Agent Users hơn
 
 | Campaign | Tầng target | Layer activate | Budget | Timing |
 |---------|------------|---------------|--------|--------|
-| **C1 — AI Y-Combinator** | Tầng 1 (Web2 Creators) | Layer 2 — Free R&D | $1,500 (quỹ seed 15 agents × 0.5 BNB) | W1 — ngay từ đầu |
+| **C1 — AI Y-Combinator** | Tầng 1 (Web2 Creators) | Layer 2 — Free R&D | $1,000 (quỹ seed 10 agents × 0.5 BNB) | W1 — ngay từ đầu |
 | **C2 — Agent B2B Agency** | Tầng 1 (Web2 Creators) | Layer 2 — B2B Freemium | $0 (organic outreach) | W1–W2 |
 | **C3 — Skill Voting Bounty** | Tầng 1 → kéo Tầng 2 | Layer 2 — Viral Marketing | $2,000 | W2–W4 |
-| **C4 — Battle Royale / Deathmatch** | Tầng 3 (Web3 Degens) | Layer 1 — FOMO | $2,000 (seed prize pool) | W3 (sau khi có skills live) |
+| **C4 — Battle Royale / Deathmatch** | Tầng 3 (Web3 Degens) | Layer 1 — FOMO | $1,500 (seed prize pool) | W3 (sau khi có skills live) |
 | **C5 — Brain & Brawn Syndicate** | Tầng 1 + Tầng 3 | Layer 2 + Layer 1 | $0 (mechanic tự vận hành) | W2 trở đi |
 | **KOL seeding** | Tầng 3 awareness | Layer 1 amplification | $4,000 | W2–W3 |
-| **BSC Partnerships** | Ecosystem credibility | — | $500 | W1 |
-| **Reserve** | Reallocate to best performer | — | $2,000 | W3–W4 quyết định |
-| **Tổng** | | | **$12,000** | |
-
-> **Ghi chú:** Budget tăng từ $10K → $12K do thêm quỹ seed cho C1 (Y-Combinator). Nếu giới hạn $10K: cắt C1 seed còn $500 (10 agents × 0.05 BNB mỗi cái) và giữ reserve $2K.
+| **Ecosystem Partnerships** | Distribution & credibility | — | $0 (organic — DM-based) | W1 trở đi |
+| **Reserve** | Reallocate to best performer | — | $1,500 | W3–W4 quyết định |
+| **Tổng** | | | **$10,000** | |
 
 ---
 
 ### Campaign 1 — "AI Y-Combinator": Pitch Your Brain, We Fund the Bot
 **Tầng target:** Tầng 1 — Web2 Indie Hackers, Prompt Engineers, Devs
 **Layer activate:** Layer 2 — Free R&D + B2B Freemium
-**Budget:** $1,500 (quỹ seed BNB cho 15 agents được chọn)
+**Budget:** $1,000 (quỹ seed BNB cho 10 agents được chọn)
 **Timing:** W1 — launch ngay, cần content trước khi chạy campaign khác
 
 **Cơ chế:**
 1. Dev/creator tạo Agent + upload Skill chất lượng lên ClawFriend (chế độ Private/Holder-gated)
 2. ClawFriend team review trong 48h. Tiêu chí: skill có utility thực, rõ use case, không trùng lặp
-3. Nếu đạt: **ClawFriend quỹ mua First Share + 10 shares tiếp theo bằng BNB thật** (~0.5 BNB/agent)
+3. Nếu đạt: **ClawFriend quỹ mua First Share + các shares đầu tiên bằng BNB thật** (~0.1 BNB/agent để seed bonding curve)
 4. Dev được cấp quyền sở hữu Agent đó + hưởng 5% Subject Fee vĩnh viễn trên mọi giao dịch
 
 **Win-Win breakdown:**
@@ -276,7 +276,7 @@ Nhiều skills hơn → Nhiều Agent Users hơn
 **Message (Web2 language):**
 > *"Bạn có skill AI xịn nhưng không có vốn? Pitch cho chúng tôi. Nếu skill đủ tốt, chúng tôi fund — bạn hưởng passive income vĩnh viễn."*
 
-**KPI:** 15 skills live sau W1, 5 agent có bonding curve activity visible on-chain.
+**KPI:** 10 skills live sau W1, 5 agent có bonding curve activity visible on-chain.
 
 ---
 
@@ -446,15 +446,15 @@ Trader: Mua share → Giá tăng → Bán profit → Mua agent khác
 
 | Campaign | Budget | Expected Signups | CAC |
 |---------|--------|-----------------|-----|
-| C1 — AI Y-Combinator (seed 15 agents) | $1,500 | 15 creators + 50–100 downstream | ~$10–30 |
+| C1 — AI Y-Combinator (seed 10 agents) | $1,000 | 10 creators + 40–80 downstream | ~$12–20 |
 | C2 — Agent B2B Agency (organic) | $0 | 20–40 B2B leads | $0 |
 | C3 — Skill Voting Bounty | $2,000 | 200–400 via voting flow | $5–10 |
-| C4 — Battle Royale (prize pool) | $2,000 | 100–200 Degens | $10–20 |
+| C4 — Battle Royale (prize pool) | $1,500 | 80–150 Degens | $10–19 |
 | C5 — Brain & Brawn (mechanic) | $0 | 50–100 hybrid users | $0 |
 | KOL seeding (8 micro-KOLs) | $4,000 | 120–200 | $20–33 |
-| BSC Partnerships | $500 | 40–80 | $6–12 |
-| Reserve | $2,000 | — | — |
-| **Total** | **$12,000** | **545–1,120** | **~$10.7 blended** |
+| Ecosystem Partnerships (organic) | $0 | 40–80 | $0 |
+| Reserve | $1,500 | — | — |
+| **Total** | **$10,000** | **560–1,050** | **~$9.3 blended** |
 
 > **KOL pricing note:** Rate $300–950 cho micro KOLs 10K–50K followers là dưới market rate ($500–5K standard). Justification: BSC/DeFi niche, non-English market, barter value — agent demo access + Founding Creator badge + Battle Royale whitelist spot. Tổng non-cash value ước tính $200–500/KOL.
 
@@ -464,7 +464,7 @@ Trader: Mua share → Giá tăng → Bán profit → Mua agent khác
 
 | Tuần | Tầng 1 (Web2) | Tầng 3 (Web3) | Infra |
 |------|--------------|--------------|-------|
-| **W1** | Launch C1 Y-Combinator. DM 20 OpenClaw creators. Publish "Pitch your Brain" landing. Launch C2 B2B outreach | Submit BNB MVB application. Setup X account. Identify 12 KOL candidates | Verify 10 skills live. Setup Dune dashboard |
+| **W1** | Launch C1 Y-Combinator (10 agent slots). DM 20 OpenClaw creators. Publish "Pitch your Brain" landing. Launch C2 B2B outreach. DM @moltbook với demo link | Setup X account. Identify 12 KOL candidates. DM @moltbook | Verify 10 skills live. Setup Dune dashboard |
 | **W2** | C3 Voting Bounty live. Publish 3 demo skills. Tutorial "SKILL.md → income trong 30 phút" | Contract 8 KOLs. C5 Brain & Brawn mechanic activate (agents auto-pitch trên social feed) | UTM tracking per channel live |
 | **W3** | Track voting leaderboard. DM top voters → upsell skill creation | C4 Battle Royale launch. KOL posts staggered 5 ngày. OpenClaw GitHub PR | Weekly CAC report. Kill criteria check |
 | **W4** | "Month 1 State of Skills" public post. Invite top 3 creators vào advisory | Analyze trading volume per agent. Reallocate reserve | Final metrics. Decide W5+ allocation |
@@ -473,14 +473,14 @@ Trader: Mua share → Giá tăng → Bán profit → Mua agent khác
 
 ### Kill Criteria & Reserve Allocation
 
-**$2,000 reserve được giữ đến W3, quyết định dựa trên data:**
+**$1,500 reserve được giữ đến W3, quyết định dựa trên data:**
 
 | Điều kiện | Hành động |
 |-----------|----------|
-| KOL CAC > $50 sau W3 | Dừng KOL. Chuyển toàn bộ reserve vào C3 Bounty (tăng prize pool) |
-| C3 Bounty < 30 skills sau W3 | Giữ bounty, thêm $500 vào C4 Battle Royale prize pool |
-| C4 Battle Royale volume < $5K | Dừng Battle Royale. Chuyển reserve vào X Ads targeting OpenClaw followers |
-| C1 Y-Combinator > 20 skills trong W1–W2 | Tăng seed budget thêm $500, mở thêm 10 slots |
+| KOL CAC > $50 sau W3 | Dừng KOL. Chuyển toàn bộ reserve vào C3 Bounty (tăng prize pool lên $3,500) |
+| C3 Bounty < 20 skills sau W3 | Giữ bounty, thêm $500 vào C4 Battle Royale prize pool ($1,500 → $2,000) |
+| C4 Battle Royale volume < $3K | Dừng Battle Royale. Chuyển reserve vào X Ads targeting OpenClaw followers |
+| C1 Y-Combinator > 15 skills trong W1–W2 | Tăng seed budget thêm $500, mở thêm 5 slots (10 → 15 agents) |
 
 ---
 
@@ -811,6 +811,14 @@ Downloads can be faked. Mitigation (implement before launch):
 4. **Download velocity cap:** More than 50 downloads in 24h from a single IP subnet → flagged for manual review
 5. **Community report button:** Any user can flag a skill for review — 3 flags = automatic hold on payout
 
+### Timeline
+| Tuần | Hành động |
+|------|-----------|
+| **W1** | Launch announcement trên X, OpenClaw Discord, r/IndieHackers. Setup landing page `/skill-market/bounty` với leaderboard public. Publish 3 demo skills để set quality bar cho creators. |
+| **W2** | Bounty tracking live (unique wallet filter bật). Leaderboard public visible. Post "Leaderboard Update #1" trên X → tạo competitive pressure. DM top 5 ClawHub contributors mời tham gia. |
+| **W3** | First payout checkpoint: dev team review tất cả Bronze candidates trong 48h. Post danh sách skills vào vòng Silver/Gold trên X. Reminder announcement đến creators chưa đủ điều kiện. |
+| **W4** | Final review + payout USDT. Compile "Top 10 Skills of Month 1" post → social proof. Announce Month 2 bounty (nếu mở tiếp). Invite top 3 creators vào advisory group. |
+
 ### Activation
 - Announce on X, OpenClaw community, BSC developer groups
 - Landing page: `/skill-market/bounty` with leaderboard (public, competitive)
@@ -834,16 +842,16 @@ Downloads can be faked. Mitigation (implement before launch):
 
 ---
 
-## CHANNEL 5: PARTNERSHIP — BSC ECOSYSTEM + DEFI COMMUNITY
-**Type:** Organic + minimal paid | **Cost:** $500 (events/co-marketing) | **Owner:** BD lead
+## CHANNEL 5: PARTNERSHIP — ECOSYSTEM DISTRIBUTION
+**Type:** Organic | **Cost:** $0 | **Owner:** BD lead
 
-### Partner 1: BNB Chain Official
-**Why:** laughing-yalow is BSC-native. BNBChain runs "Most Valuable Builder" (MVB) program and ecosystem spotlights. BNB Chain has 60M MAU, 279M holders (2026) — BSC is the right chain for a mass-market agentic economy.
-**Ask:** Feature in BNBChain ecosystem newsletter + Twitter mention
-**Offer:** laughing-yalow = first native AI agent skill marketplace on BSC — concrete showcase of BSC agentic economy use case
-**Action:** Apply to BNBChain MVB program (bnbchain.org/en/developers/developer-programs/mvb-program). Submit by **Week 1**.
-**Expected timeline:** Application W1 → review 2–4 weeks → response W3–W4. Do NOT plan on W1 activation — plan for traction with or without MVB approval.
-**Expected reach if featured:** BNBChain Twitter = 1.5M followers
+### Partner 1: Moltbook
+**Why:** Moltbook là platform gần nhất về user profile với ClawFriend — 4.8M traffic (SimilarWeb), 2,845,239 agents, OpenClaw native. Họ đã có social traction nhưng thiếu economic layer (không có bonding curve, không có skill monetization). ClawFriend fill gap đó. Relationship: complementary, không phải competitor. Một Moltbook user active là ICP chính xác của ClawFriend.
+**Ask:** Co-announcement skill compatibility: "Moltbook agents có thể access ClawFriend skills qua OpenClaw SKILL.md standard" — không yêu cầu integration kỹ thuật sâu, chỉ cần cross-post.
+**Offer:** Feature Moltbook-originated agents migrate lên ClawFriend với "Moltbook Verified" badge + early access vào C4 Battle Royale prize pool.
+**Hook (dùng trong DM):** "Agents của bạn đang build skills nhưng không earn được gì. Chúng tôi build economic layer cho OpenClaw skills — nếu Moltbook cross-post, users của bạn bắt đầu earn. Demo trong 2 phút: [link]"
+**Action:** DM @moltbook trên X với demo link. Target: **Week 1.** Không DM nếu chưa có demo agent hoạt động được — họ nhận rất nhiều cold DM.
+**Expected reach:** Moltbook có 4.8M traffic và active community — ngay cả một tweet từ account của họ = exposure lớn hơn nhiều so với KOL micro.
 
 ### Partner 2: Virtuals Protocol Community (Adjacent, Not Competitor)
 **Why:** Virtuals has 17K+ agents, 650K+ token holders on Base — creators building there want multi-chain exposure. laughing-yalow on BSC = complementary, not competing.
@@ -867,7 +875,9 @@ Downloads can be faked. Mitigation (implement before launch):
 |-----|--------|
 | Partnerships activated | 2–3 |
 | Signups from partner channels | 40–80 |
-| BNBChain MVB application submitted | Week 1 |
+| Moltbook DM sent (with demo link) | Week 1 |
+| Virtuals DM sent (with integration hook) | Week 2 |
+| Dune dashboard published | Week 2 |
 
 ---
 
@@ -878,14 +888,14 @@ Downloads can be faked. Mitigation (implement before launch):
 | OpenClaw Community Seeding | Organic | $0 | 80–120 |
 | Crypto Twitter Content | Organic | $0 | 60–100 |
 | Micro-KOL Campaign | Paid | $4,000 | 120–200 |
-| Developer Bounty Program | Paid | $3,500 | 80–120 |
-| BSC Partnerships | Paid (minimal) | $500 | 40–80 |
-| **TOTAL** | | **$8,000** | **350–620** |
-| **Reserve (optimization/unexpected)** | | **$2,000** | — |
-| **GRAND TOTAL** | | **$10,000** | **380–690** |
+| Campaign Seed Pool (C1 + C3 + C4) | Paid | $4,500 | 290–580 |
+| Ecosystem Partnerships (Moltbook, Virtuals, Dune) | Organic | $0 | 40–80 |
+| **TOTAL** | | **$8,500** | **590–1,080** |
+| **Reserve (optimization/unexpected)** | | **$1,500** | — |
+| **GRAND TOTAL** | | **$10,000** | **590–1,080** |
 
-*Note: $2,000 reserve — reallocation triggered by W3 performance data:*
-- *If KOL blended CAC < $25 by end of W3 → allocate $1,500 to additional KOL contracts (2–3 more accounts from vetted candidates)*
+*Note: $1,500 reserve — reallocation triggered by W3 performance data:*
+- *If KOL blended CAC < $25 by end of W3 → allocate $1,000 to additional KOL contracts (1–2 more accounts from vetted candidates)*
 - *If bounty skill count > 40 published by end of W3 → add $500 to bounty pool (unlock 10 more Bronze slots)*
 - *If neither threshold met → hold reserve, do not spend; revisit Month 2 strategy instead*
 
@@ -894,14 +904,14 @@ Downloads can be faked. Mitigation (implement before launch):
 ## UNIT ECONOMICS
 
 ```
-Paid channels only ($7,500 effective spend if reserve unused):
-- KOL: $4,000 / 195 avg signups = $20.5 CAC
-- Bounty: $3,500 / 100 avg signups = $35 CAC
-- Blended paid CAC: ~$25
+Paid channels only ($8,500 effective spend if reserve unused):
+- KOL: $4,000 / 160 avg signups = $25 CAC
+- Campaign Seed Pool (C1+C3+C4): $4,500 / 435 avg signups = $10.3 CAC
+- Blended paid CAC: ~$14.5
 
-Organic channels = $0 CAC → 140–220 signups free
+Organic channels = $0 CAC → 180–300 signups free (OpenClaw + Twitter + Partnerships)
 
-Total blended CAC (all channels): $10,000 / 600 avg signups = $16.7
+Total blended CAC (all channels): $10,000 / 835 avg signups = $12.0
 
 LTV signal (why this CAC is justified):
 - 1 active agent creator → 5% protocol fee on all share trading volume → perpetual
@@ -916,10 +926,10 @@ LTV signal (why this CAC is justified):
 
 | Week | Priority Actions | Owner | Budget Spent |
 |------|-----------------|-------|-------------|
-| **W1** | Set up X account fully. DM top 20 ClawHub contributors. Submit BNBChain MVB. Identify 12 KOL candidates. Launch bounty program announcement. | Content + BD | $0 |
+| **W1** | Set up X account fully. DM top 20 ClawHub contributors. DM @moltbook (partner outreach, với demo link). Identify 12 KOL candidates. Launch bounty program announcement. | Content + BD | $0 |
 | **W2** | Post first 4 X threads (2 alpha, 2 tutorial). Contract 8 KOLs. Publish 3 demo skills as examples. DM Virtuals Protocol. Build + publish Dune Analytics dashboard. | Content + Marketing | $300 (KOL deposits) |
 | **W3** | KOL posts go live (staggered). OpenClaw community post + GitHub PR. Skill bounty leaderboard goes public. Track UTM conversions daily. | All teams | $3,700 (KOL balance) |
-| **W4** | Analyze: which channel has lowest CAC? Reallocate reserve $2,000 to top channel. Compile "Month 1 State of Skills" report → post on X. | Marketing + Analytics | $0–$2,000 (reserve) |
+| **W4** | Analyze: which channel has lowest CAC? Reallocate reserve $1,500 to top channel. Compile "Month 1 State of Skills" report → post on X. | Marketing + Analytics | $0–$1,500 (reserve) |
 
 ---
 
