@@ -20,7 +20,27 @@
 
 ---
 
-## 2. COMPETITOR DATA
+## 2. WEB TRAFFIC DATA (SimilarWeb, Feb 2026)
+
+> **Source method:** SimilarWeb monthly visit estimates. Dùng để so sánh tương đối giữa các competitors, không dùng làm số liệu tuyệt đối. SimilarWeb estimates có margin of error ~15–20% với sites nhỏ.
+
+| Platform | Traffic (Monthly Visits) | Source | Confidence | Note |
+|----------|--------------------------|--------|------------|------|
+| Moltbook (moltbook.com) | 4.8M | SimilarWeb, Feb 2026 | MEDIUM | Highest traffic in competitive set; viral social flywheel |
+| SkillsMP (skillsmp.com) | 1.2M | SimilarWeb, Feb 2026 | MEDIUM | Level 1 — skill marketplace Web2 |
+| Lobehub (lobehub.com) | 689.7K | SimilarWeb, Feb 2026 | MEDIUM | Level 2 — agent social/tools registry Web2 |
+| Virtuals Protocol (virtuals.io) | 123.7K | SimilarWeb, Feb 2026 | MEDIUM | Level 4 — highest traffic trong Web3 tier |
+| Clawk.ai (clawk.ai) | 22 | SimilarWeb, Feb 2026 | LOW — số quá nhỏ, SimilarWeb không accurate dưới 1K | Effectively 0 real traffic |
+| NEAR AI Market (market.near.ai) | 0 | SimilarWeb, Feb 2026 | N/A | Loại khỏi competitor list |
+| SelfClaw (selfclaw.ai) | 0 | SimilarWeb, Feb 2026 | N/A | Loại khỏi competitor list |
+| Build4 (build4.io) | 0 | SimilarWeb, Feb 2026 | N/A | Loại khỏi competitor list |
+| ClawGig (clawgig.ai) | 0 | SimilarWeb, Feb 2026 | N/A | Loại khỏi competitor list |
+
+> **Traffic Paradox (key insight):** Level 1–2 platforms (Web2, less overlap) có traffic cao nhất. Level 4–5 platforms (Web3, more overlap with ClawFriend) gần như 0 traffic. Moltbook là anomaly duy nhất ở Level 2 vì social virality, không phải product depth. Xem phân tích đầy đủ trong competitive-landscape.md.
+
+---
+
+## 3. COMPETITOR DATA
 
 ### Virtuals Protocol
 > **Note on data:** Two sets of numbers exist. (A) Snapshot sources (Tiger Research Jul 2025, Messari Sep 2025) — verified by independent analysts. (B) Live counters from virtuals.io — higher numbers, read Feb 25 2026. Competitive landscape uses live (B) with explicit timestamp. Both sets kept here for traceability.
@@ -85,21 +105,20 @@
 
 > ⚠️ **FLAG:** Build4 metrics are homepage counters on a project with near-zero social presence. Numbers are used in competitive landscape as indicative (labelled "not cross-referenced"). Do not cite as hard data in presentation.
 
-### friend.tech (bonding curve benchmark)
-
-### friend.tech
+### SkillsMP
 | Data Point | Value | Source | URL | Confidence |
 |------------|-------|--------|-----|------------|
-| Users in first 11 days | 100,000+ | CoinDesk, Aug 2023 | https://www.coindesk.com/tech/2023/08/21/friendtech-gains-100k-users-quickly-in-depths-of-a-bear-market | HIGH |
-| Users by September 2023 | 300,000+ active | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | HIGH |
-| Trading volume in first 24h | $8.1M | CoinDesk | https://www.coindesk.com/tech/2023/08/21/friendtech-gains-100k-users-quickly-in-depths-of-a-bear-market | HIGH |
-| Revenue in first month | $2M+ | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | HIGH |
-| Net deposits first 2 weeks | $33M | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | HIGH |
-| Day-1 retention | 70% returned next day | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | MEDIUM |
-| Day-7 retention | 50% returned | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | MEDIUM |
-| CAC | **[NOT PUBLISHED — friend.tech never disclosed]** | No public disclosure | — | N/A |
+| Monthly traffic | 1.2M visits | SimilarWeb, Feb 2026 | https://similarweb.com | MEDIUM |
+| Platform focus | Skill marketplace cho SKILL.md format (Claude/ChatGPT/X agents) | skillsmp.com | https://skillsmp.com | HIGH |
+| Monetization | [UNVERIFIED — no public revenue model disclosed] | — | — | N/A |
 
-> **Key insight:** friend.tech reached 100K users in 11 days with zero disclosed ad spend → growth was viral/social. This is the model laughing-yalow should aim for with OpenClaw community seeding.
+### Lobehub
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| Monthly traffic | 689.7K visits | SimilarWeb, Feb 2026 | https://similarweb.com | MEDIUM |
+| Platform focus | Open-source LLM/AI platform; agent marketplace + plugin store + community agents | lobehub.com | https://lobehub.com | HIGH |
+| GitHub stars | [NEEDS VERIFY] | — | https://github.com/lobehub/lobe-chat | — |
+| Monetization | Freemium SaaS | lobehub.com | https://lobehub.com | MEDIUM |
 
 ### OpenClaw / ClawHub Ecosystem
 | Data Point | Value | Source | URL | Confidence |
@@ -160,6 +179,24 @@
 
 ## 4. SUPPLY-SIDE BOOTSTRAP REFERENCES
 
+### Bonding Curve & Viral Growth Precedents
+> friend.tech là historical case study — không phải đối thủ, không còn active. Dùng làm benchmark cho bonding curve viral mechanics và pattern collapse khi thiếu utility layer.
+
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| Users in first 11 days | 100,000+ | CoinDesk, Aug 2023 | https://www.coindesk.com/tech/2023/08/21/friendtech-gains-100k-users-quickly-in-depths-of-a-bear-market | HIGH |
+| Users by September 2023 | 300,000+ active | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | HIGH |
+| Trading volume in first 24h | $8.1M | CoinDesk | https://www.coindesk.com/tech/2023/08/21/friendtech-gains-100k-users-quickly-in-depths-of-a-bear-market | HIGH |
+| Revenue in first month | $2M+ | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | HIGH |
+| Net deposits first 2 weeks | $33M | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | HIGH |
+| Day-1 retention | 70% returned next day | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | MEDIUM |
+| Day-7 retention | 50% returned | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | MEDIUM |
+| CAC | **[NOT PUBLISHED]** | No public disclosure | — | N/A |
+| Pattern collapse | Peak tháng 9/2023 → near-zero trong 60 ngày | ICODA | https://icoda.io/blog/friend-tech-the-story-of-rapid-growth-and-decline/ | HIGH |
+
+> **Key lesson:** friend.tech tăng 100K users trong 11 ngày với zero disclosed ad spend — bonding curve FOMO tạo viral tự nhiên. Nhưng collapse sau 60 ngày vì không có utility layer (bricks). Đây là proof cho cả hai luận điểm: glue alone không đủ; nhưng khi combine với bricks, viral cơ học bonding curve là cực mạnh.
+
+### Other Bootstrap Benchmarks
 | Reference | Data | Source | URL | Confidence |
 |-----------|------|--------|-----|------------|
 | Gitcoin grants cost per contributor | ~$50–$150 | Gitcoin ecosystem reports | https://gitcoin.co | MEDIUM |
