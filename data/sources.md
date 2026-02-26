@@ -210,7 +210,70 @@
 
 ---
 
-## 5. TAM & MARKET SIZE
+## 5. SKILL RESEARCH DEMAND EVIDENCE
+
+> **BGK test:** Mỗi số liệu trong skill-research.md phải map vào một row dưới đây. Nếu không có entry → số liệu đó phải bị gắn [UNVERIFIED] hoặc xóa.
+
+### Skill 1 — AI Research Briefing Agent
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| Perplexity MAU | 15M+ monthly active users (Jan 2026) | The Information, Jan 2026 | https://www.theinformation.com/articles/perplexity-reaches-15-million-monthly-active-users | MEDIUM — paywalled, widely cited |
+| Feedly Pro pricing | $8–18/mo | feedly.com/pricing | https://feedly.com/pricing | HIGH |
+| r/MachineLearning subscribers | 3.8M+ | Reddit, Feb 2026 | https://reddit.com/r/MachineLearning | HIGH — public stat |
+| r/artificial subscribers | 2M+ | Reddit, Feb 2026 | https://reddit.com/r/artificial | HIGH — public stat |
+
+### Skill 2 — B2B Client Acquisition Scout
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| Apollo.io ARR | $100M+ | TechCrunch, 2024 | https://techcrunch.com/2024/02/08/apollo-io-raises-100m-at-1-6b-valuation/ | HIGH |
+| LinkedIn Sales Navigator pricing | $100/mo | LinkedIn pricing page | https://business.linkedin.com/sales-solutions/sales-navigator | HIGH |
+| Upwork "AI & Machine Learning" growth | Fastest growing category Q4 2025 | Upwork Quarterly Report | https://investors.upwork.com | MEDIUM — requires specific quarterly report |
+| "AI automation freelancer" search trend | Uptrend 2024–2026 | Google Trends | https://trends.google.com/trends/explore?q=ai+automation+freelancer | MEDIUM — trends, not absolute volume |
+
+### Skill 3 — GitHub PR Review & Documentation Generator
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| GitHub Copilot paid users | 1.77M (Oct 2023) | GitHub CEO Thomas Dohmke, GitHub Universe 2023 | https://github.blog/news-insights/product-news/github-copilot-is-generally-available-to-all-developers/ | HIGH |
+| GitHub Copilot pricing | $10–19/mo individual, $19/mo business | github.com/features/copilot | https://github.com/features/copilot | HIGH |
+| CodeRabbit users | 1,000+ teams | codearabbit.ai, GitHub Marketplace listing | https://marketplace.github.com/apps/coderabbitai | MEDIUM — from their marketing page |
+| CodeRabbit pricing | $12–24/mo | codearabbit.ai/pricing | https://www.codearabbit.ai/pricing | HIGH |
+| Mintlify pricing | $150+/mo | mintlify.com/pricing | https://mintlify.com/pricing | HIGH |
+
+### Skill 4 — Whale Wallet Tracker
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| Whale Alert Twitter followers | 1.2M (Feb 2026) | @whale_alert X profile | https://x.com/whale_alert | HIGH — directly verifiable |
+| Nansen pricing | $100–$999/mo | nansen.ai/pricing | https://nansen.ai/pricing | HIGH |
+| Arkham Intelligence Pro pricing | $150/mo | arkhamintelligence.com | https://arkhamintelligence.com | HIGH |
+| "whale alert" search trend | Stable high volume 2021–2026 | Google Trends | https://trends.google.com/trends/explore?q=whale+alert+crypto | MEDIUM — trends, not absolute |
+| r/cryptocurrency + r/defi whale tracking posts | 50+ posts/month | Reddit search | [NEEDS SPOT CHECK — estimate, not verified count] | LOW — internal estimate |
+
+### Skill 5 — Rug Pull & Scam Detector
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| Maestro bot paid users | "thousands of paid subscribers" | maestrobots.com | https://maestrobots.com | LOW — self-reported marketing claim |
+| Pocket Universe users | 100K+ | TechCrunch, 2024 | https://techcrunch.com/2024/01/25/pocket-universe-raises-4-4m-for-web3-security-tool/ | HIGH |
+| % new tokens that rug/scam | 70–90% estimate | Multiple crypto security reports | [UNVERIFIED — widely cited estimate, no single primary source] | LOW — needs better source |
+| "rug pull checker" search trend | High consistent volume | Google Trends | https://trends.google.com/trends/explore?q=rug+pull+checker | MEDIUM |
+
+### Skill 6 — On-Chain + Social Signal Aggregator
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| Santiment pricing | $49–$999/mo | santiment.net/pricing | https://santiment.net/pricing | HIGH |
+| LunarCrush valuation | $100M+ (2024 round) | Crunchbase | https://www.crunchbase.com/organization/lunarcrush | MEDIUM — Crunchbase data |
+| Brandwatch pricing | $800–$3,000/mo | brandwatch.com/pricing | https://www.brandwatch.com/pricing/ | HIGH |
+| "social sentiment crypto" trend | Uptrend 2024–2026 | Google Trends | https://trends.google.com/trends/explore?q=crypto+social+sentiment | MEDIUM |
+
+### Skill 7 — Agent-to-Agent Task Orchestrator
+| Data Point | Value | Source | URL | Confidence |
+|------------|-------|--------|-----|------------|
+| LangChain GitHub stars | 86K+ stars | github.com/langchain-ai/langchain | https://github.com/langchain-ai/langchain | HIGH — directly verifiable |
+| CrewAI GitHub stars | 28K+ stars (< 1 year) | github.com/crewAIInc/crewAI | https://github.com/crewAIInc/crewAI | HIGH — directly verifiable |
+| Virtuals ACP (agent-to-agent protocol) | Launched Q4 2025, early stage | virtuals.io/acp | https://virtuals.io | MEDIUM — live product, early |
+
+---
+
+## 6. TAM & MARKET SIZE
 
 | Data Point | Value | Source | URL | Confidence |
 |------------|-------|--------|-----|------------|
